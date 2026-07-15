@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors — Lumina Dubai palette */
+  --color-surface-bright: #2b3a50;
+  --color-surface-dim: #041428;
+  --color-surface-container-low: #0c1c30;
+  --color-on-secondary-container: #fdd977;
+  --color-on-error: #690005;
+  --color-surface: #041428;
+  --color-primary: #bbc7df;
+  --color-error: #ffb4ab;
+  --color-on-tertiary-fixed-variant: #454747;
+  --color-on-primary-fixed-variant: #3c475b;
+  --color-tertiary: #c6c6c7;
+  --color-inverse-surface: #d4e3ff;
+  --color-background: #041428;
+  --color-error-container: #93000a;
+  --color-outline-variant: #45474c;
+  --color-secondary-container: #785d00;
+  --color-on-tertiary-fixed: #1a1c1c;
+  --color-on-tertiary: #2f3131;
+  --color-surface-tint: #bbc7df;
+  --color-on-secondary-fixed: #241a00;
+  --color-secondary-fixed: #ffe08f;
+  --color-on-surface-variant: #c5c6cd;
+  --color-surface-container: #112035;
+  --color-on-secondary: #3d2e00;
+  --color-on-primary: #253144;
+  --color-primary-fixed: #d7e3fc;
+  --color-tertiary-container: #141616;
+  --color-on-error-container: #ffdad6;
+  --color-primary-container: #0a1628;
+  --color-on-primary-container: #758096;
+  --color-tertiary-fixed-dim: #c6c6c7;
+  --color-on-surface: #d4e3ff;
+  --color-on-primary-fixed: #101c2e;
+  --color-secondary-fixed-dim: #e6c364;
+  --color-surface-container-high: #1c2b40;
+  --color-surface-container-lowest: #000e22;
+  --color-outline: #8f9097;
+  --color-on-tertiary-container: #7e8080;
+  --color-surface-variant: #27354b;
+  --color-tertiary-fixed: #e2e2e2;
+  --color-inverse-primary: #535f74;
+  --color-inverse-on-surface: #223146;
+  --color-on-secondary-fixed-variant: #584400;
+  --color-secondary: #e6c364;
+  --color-surface-container-highest: #27354b;
+  --color-primary-fixed-dim: #bbc7df;
+  --color-on-background: #d4e3ff;
+
+  /* Border radius scale */
+  --radius: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+
+  /* Layout spacing tokens */
+  --spacing-container-padding-mobile: 24px;
+  --spacing-container-padding-desktop: 80px;
+  --spacing-unit: 8px;
+  --spacing-section-gap: 120px;
+  --spacing-gutter: 24px;
+
+  /* Font families */
+  --font-body-lg: "DM Sans", sans-serif;
+  --font-body-md: "DM Sans", sans-serif;
+  --font-headline-lg: "DM Serif Display", serif;
+  --font-headline-lg-mobile: "DM Serif Display", serif;
+  --font-title-md: "DM Sans", sans-serif;
+  --font-display-lg: "DM Serif Display", serif;
+  --font-display-lg-mobile: "DM Serif Display", serif;
+  --font-label-caps: "DM Sans", sans-serif;
+
+  /* Font sizes */
+  --text-body-lg: 18px;
+  --text-body-lg--line-height: 32px;
+  --text-body-lg--font-weight: 400;
+  --text-body-md: 16px;
+  --text-body-md--line-height: 24px;
+  --text-body-md--font-weight: 400;
+  --text-headline-lg: 48px;
+  --text-headline-lg--line-height: 56px;
+  --text-headline-lg--font-weight: 400;
+  --text-headline-lg-mobile: 32px;
+  --text-headline-lg-mobile--line-height: 40px;
+  --text-headline-lg-mobile--font-weight: 400;
+  --text-title-md: 20px;
+  --text-title-md--line-height: 28px;
+  --text-title-md--letter-spacing: 0.01em;
+  --text-title-md--font-weight: 500;
+  --text-display-lg: 64px;
+  --text-display-lg--line-height: 72px;
+  --text-display-lg--letter-spacing: -0.02em;
+  --text-display-lg--font-weight: 400;
+  --text-display-lg-mobile: 40px;
+  --text-display-lg-mobile--line-height: 48px;
+  --text-display-lg-mobile--font-weight: 400;
+  --text-label-caps: 12px;
+  --text-label-caps--line-height: 16px;
+  --text-label-caps--letter-spacing: 0.15em;
+  --text-label-caps--font-weight: 700;
+}
+
+body {
+  min-height: max(884px, 100dvh);
+}
+
+.glass-card {
+  background: rgba(17, 32, 53, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(230, 195, 100, 0.1);
+}
+
+.hero-scrim {
+  background: linear-gradient(to bottom, rgba(4, 20, 40, 0.4) 0%, rgba(4, 20, 40, 0.9) 100%);
+}
+
+.hover-lift {
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.hover-lift:hover {
+  transform: translateY(-8px);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #041428;
+}
+::-webkit-scrollbar-thumb {
+  background: #c9a84c;
+  border-radius: 10px;
+}
