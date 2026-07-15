@@ -335,8 +335,13 @@ export interface UserBooking {
   check_out: string;
   nights: number;
   total_price: number | string;
+  subtotal?: number | string;
+  tax?: number | string;
+  tourism_fee?: number | string;
   adults?: number;
   children?: number;
+  payment_status?: string;
+  created_at?: string;
 }
 
 export interface WishlistHotel {
