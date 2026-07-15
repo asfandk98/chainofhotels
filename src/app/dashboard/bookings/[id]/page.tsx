@@ -17,7 +17,10 @@ interface FullBooking extends UserBooking {
   guest_name?: string;
   guest_email?: string;
   guest_phone?: string;
-  created_at?: string;
+
+  subtotal?: number | string;
+  tax?: number | string;
+  tourism_fee?: number | string;
 }
 
 export default function BookingDetailPage() {
